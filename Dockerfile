@@ -13,7 +13,7 @@ COPY --from=build /app/target/crime-reporting-0.0.1-SNAPSHOT.jar app.jar
 # Environment variables
 ENV SQLITE_DB_PATH=./crime_reporting.db
 ENV JWT_EXPIRATION_MS=86400000
-ENV ADMIN_NAME=System Admin
+ENV ADMIN_NAME="System Admin"
 ENV ADMIN_EMAIL=admin@crime.local
 ENV ADMIN_PASSWORD=Admin@12345
 ENV MEDIA_UPLOAD_DIR=./uploads
