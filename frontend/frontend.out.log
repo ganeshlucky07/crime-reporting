@@ -1,0 +1,35 @@
+
+> crime-reporting-frontend@0.1.0 dev
+> vite --host 0.0.0.0 --port 5173
+
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m889[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.22:[1m5173[22m/[39m
+[2m1:09:25 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/MyReportsPage.jsx, /src/styles/index.css[22m
+[2m1:09:25 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/MyReportsPage.jsx, /src/styles/index.css[22m
+[2m1:12:02 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m1:16:13 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m1:19:50 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m1:29:24 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m1:29:29 am[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33msockjs-client/dist/sockjs[32m[39m
+[2m1:29:29 am[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m1:36:08 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m1:36:29 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/PoliceVerificationPage.jsx, /src/styles/index.css[22m
+[2m1:38:04 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m1:40:32 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles/index.css, /src/pages/user/MyReportsPage.jsx, /src/pages/admin/PoliceVerificationPage.jsx, /src/pages/admin/AdminDashboardPage.jsx, /src/pages/admin/AdminMapPage.jsx[22m
+[2m1:43:11 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m1:44:29 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/PoliceVerificationPage.jsx, /src/styles/index.css[22m
+[2m1:50:47 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m1:51:10 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m1:51:37 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m1:51:55 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m1:52:09 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m1:52:21 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m1:52:56 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m1:53:22 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m2:06:46 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m2:07:00 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m2:07:38 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m
+[2m2:07:56 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/user/SubmitReportPage.jsx, /src/styles/index.css[22m

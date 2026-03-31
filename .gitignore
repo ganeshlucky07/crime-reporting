@@ -1,0 +1,9 @@
+backend/target/
+backend/*.log
+frontend/node_modules/
+frontend/dist/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example

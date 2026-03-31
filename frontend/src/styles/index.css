@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color: #0f172a;
+    font-family: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #f8fafc;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-[28px] border border-white/70 bg-white/90 p-6 shadow-panel backdrop-blur;
+  }
+
+  .label-text {
+    @apply mb-2 block text-sm font-semibold text-slate-700;
+  }
+
+  .input-field {
+    @apply w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-orange-300 focus:ring-4 focus:ring-orange-100;
+  }
+
+  .table-head {
+    @apply px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.2em] text-slate-500;
+  }
+
+  .table-cell {
+    @apply px-4 py-4 align-top;
+  }
+}

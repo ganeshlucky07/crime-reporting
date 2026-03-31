@@ -1,0 +1,64 @@
+spring:
+  application:
+    name: crime-reporting
+  datasource:
+    url: jdbc:sqlite:${SQLITE_DB_PATH:./crime_reporting.db}
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.community.dialect.SQLiteDialect
+        format_sql: false
+        jdbc:
+          time_zone: UTC
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+  servlet:
+    multipart:
+      max-file-size: ${MULTIPART_MAX_FILE_SIZE:20MB}
+      max-request-size: ${MULTIPART_MAX_REQUEST_SIZE:30MB}
+  main:
+    banner-mode: off
+  threads:
+    virtual:
+      enabled: false
+
+server:
+  port: ${PORT:8080}
+  compression:
+    enabled: true
+  shutdown: graceful
+
+logging:
+  level:
+    root: WARN
+    com.creame.crime: INFO
+    org.hibernate.SQL: WARN
+    org.springframework.web.socket: WARN
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:change-this-secret-before-production-use}
+    expiration-ms: ${JWT_EXPIRATION_MS:86400000}
+  cors:
+    allowed-origins:
+      - ${APP_CORS_ALLOWED_ORIGINS:http://localhost:5173}
+  websocket:
+    allowed-origins:
+      - ${WS_ALLOWED_ORIGINS:http://localhost:5173}
+  bootstrap:
+    admin-name: ${ADMIN_NAME:System Admin}
+    admin-email: ${ADMIN_EMAIL:admin@crime.local}
+    admin-password: ${ADMIN_PASSWORD:Admin@12345}
+  pagination:
+    default-size: ${DEFAULT_PAGE_SIZE:10}
+    max-size: ${MAX_PAGE_SIZE:50}
+  media:
+    upload-dir: ${MEDIA_UPLOAD_DIR:./uploads}
+    max-files-per-report: ${MEDIA_MAX_FILES_PER_REPORT:4}
+    max-image-bytes: ${MEDIA_MAX_IMAGE_BYTES:4194304}
+    max-video-bytes: ${MEDIA_MAX_VIDEO_BYTES:15728640}
