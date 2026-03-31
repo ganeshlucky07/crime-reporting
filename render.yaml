@@ -12,9 +12,9 @@ services:
       - key: JWT_EXPIRATION_MS
         value: "86400000"
       - key: APP_CORS_ALLOWED_ORIGINS
-        value: "*"
+        value: "https://crime-reporting-red.vercel.app"
       - key: WS_ALLOWED_ORIGINS
-        value: "*"
+        value: "https://crime-reporting-red.vercel.app"
       - key: ADMIN_NAME
         value: "System Admin"
       - key: ADMIN_EMAIL
