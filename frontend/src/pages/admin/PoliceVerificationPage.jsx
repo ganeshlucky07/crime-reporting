@@ -120,8 +120,10 @@ export default function PoliceVerificationPage() {
   }
 
   useEffect(() => {
-    loadReports(0, filters);
-  }, []);
+    if (token) {
+      loadReports(0, filters);
+    }
+  }, [token]);
 
   const realtimeState = useRealtimeChannel({
     enabled: Boolean(token),
