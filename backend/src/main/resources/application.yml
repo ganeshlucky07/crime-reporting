@@ -2,15 +2,17 @@ spring:
   application:
     name: crime-reporting
   datasource:
-    url: ${DATABASE_URL:jdbc:sqlite:./crime_reporting.db}
-    driver-class-name: ${DB_DRIVER:org.sqlite.JDBC}
+    url: ${DATABASE_URL:${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5432/crime_reporting}}
+    username: ${DB_USER:${DATABASE_USER:}}
+    password: ${DB_PASSWORD:${DATABASE_PASSWORD:}}
+    driver-class-name: ${DB_DRIVER:org.postgresql.Driver}
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: false
     properties:
       hibernate:
-        dialect: ${DB_DIALECT:org.hibernate.community.dialect.SQLiteDialect}
+        dialect: ${DB_DIALECT:org.hibernate.dialect.PostgreSQLDialect}
         format_sql: false
         jdbc:
           time_zone: UTC
