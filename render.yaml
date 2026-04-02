@@ -5,8 +5,14 @@ services:
     plan: free
     dockerfilePath: ./Dockerfile
     envVars:
-      - key: SQLITE_DB_PATH
-        value: ./crime_reporting.db
+      - key: DATABASE_URL
+        fromDatabase:
+          name: crime-reporting-db
+          property: connectionString
+      - key: DB_DRIVER
+        value: org.postgresql.Driver
+      - key: DB_DIALECT
+        value: org.hibernate.dialect.PostgreSQLDialect
       - key: JWT_SECRET
         generateValue: true
       - key: JWT_EXPIRATION_MS
@@ -33,3 +39,9 @@ services:
         value: "10MB"
       - key: MULTIPART_MAX_REQUEST_SIZE
         value: "50MB"
+
+databases:
+  - name: crime-reporting-db
+    plan: free
+    databaseName: crime_reporting
+    user: crime_user

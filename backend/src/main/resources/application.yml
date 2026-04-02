@@ -2,15 +2,15 @@ spring:
   application:
     name: crime-reporting
   datasource:
-    url: jdbc:sqlite:${SQLITE_DB_PATH:./crime_reporting.db}
-    driver-class-name: org.sqlite.JDBC
+    url: ${DATABASE_URL:jdbc:sqlite:./crime_reporting.db}
+    driver-class-name: ${DB_DRIVER:org.sqlite.JDBC}
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: false
     properties:
       hibernate:
-        dialect: org.hibernate.community.dialect.SQLiteDialect
+        dialect: ${DB_DIALECT:org.hibernate.community.dialect.SQLiteDialect}
         format_sql: false
         jdbc:
           time_zone: UTC
